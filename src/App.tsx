@@ -39,7 +39,7 @@ import {
   scaleIn,
 } from "./components/ui";
 import Booking from "./components/Booking";
-import heroImage from "../src/images/heroimage.png";
+import heroImage from "./images/heroimage.png";
 import { useRef } from "react";
 
 const id = (n: string) => n.toLowerCase();
