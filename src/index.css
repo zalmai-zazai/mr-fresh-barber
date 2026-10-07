@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@theme {
+  --color-ink: #0c0b0a; --color-coal: #161412; --color-line: #2c2824;
+  --color-bone: #f3ede3; --color-gold: #c9a45c; --color-bronze: #8c6a32;
+  --font-display: "Barlow Condensed", Impact, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: var(--color-ink); color: var(--color-bone); font-family: var(--font-body); overflow-x: hidden; }
+body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:60; opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E"); }
+:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 3px; }
+.display { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; line-height: .9; letter-spacing: -.005em; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
